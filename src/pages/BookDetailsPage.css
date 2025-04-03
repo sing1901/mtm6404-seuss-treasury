@@ -1,0 +1,112 @@
+/* Styling for the book details page */
+.book-details-container {
+    max-width: 800px; /* Wider container for details */
+    margin: 2rem auto; /* Center container with top/bottom margin */
+    padding: 2rem;
+    background-color: #282828; /* Slightly different background */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative; /* Needed for absolute positioning of back button if desired */
+  }
+  
+  /* Style the back button */
+  .back-button {
+    margin-bottom: 1.5rem; /* Space below button */
+    padding: 0.6em 1.2em; /* Copied from index.css button base */
+    font-size: 0.9em; /* Slightly smaller font */
+    /* Add other button styles if needed or rely on global ones */
+    background-color: #444;
+    color: #eee;
+    border: 1px solid #555;
+  }
+  .back-button:hover {
+    background-color: #555;
+    border-color: #777;
+  }
+  
+  /* Layout for content (image and text) */
+  .book-details-content {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-direction: column; /* Default stack on small screens */
+    align-items: center; /* Center items when stacked */
+    gap: 2rem; /* Space between image and text */
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 600px) {
+    .book-details-content {
+      flex-direction: row; /* Side-by-side on larger screens */
+      align-items: flex-start; /* Align items to the top */
+    }
+  }
+  
+  .book-details-cover {
+    flex-shrink: 0; /* Prevent image from shrinking too much */
+    width: 100%; /* Full width on small screens */
+    max-width: 250px; /* Max width */
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border: 2px solid #555;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (min-width: 600px) {
+      .book-details-cover {
+          width: 250px; /* Fixed width on larger screens */
+      }
+  }
+  
+  .book-info {
+    flex-grow: 1; /* Allow text section to take remaining space */
+    text-align: left; /* Left-align text */
+  }
+  
+  .book-info h2 {
+    margin-top: 0; /* Remove top margin for heading */
+    margin-bottom: 1rem;
+    color: #64cfff; /* Use a different highlight color */
+    font-size: 2em;
+    text-align: center; /* Center title even in flex layout */
+  }
+  
+  @media (min-width: 600px) {
+      .book-info h2 {
+         text-align: left; /* Align left on larger screens */
+      }
+  }
+  
+  
+  .book-description {
+    line-height: 1.7; /* Increase line height for readability */
+    color: #ccc; /* Light grey text */
+    font-size: 1.05em;
+  }
+  
+  /* Styles for loading/error messages (can reuse from BooksPage.css or define here) */
+  .status-message {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2rem;
+    color: #aaa;
+  }
+  
+  .error-message {
+    color: #ff6b6b; /* Red color for errors */
+    font-weight: bold;
+  }
+  
+  .back-link-error {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #646cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+  }
+  .back-link-error:hover {
+      background-color: #535bf2;
+  }

@@ -1,0 +1,21 @@
+/* Basic styles for the navigation bar */
+.main-nav {
+    background-color: #333; /* Dark background */
+    padding: 1rem;
+    margin-bottom: 2rem; /* Space below the nav */
+    border-radius: 4px;
+    text-align: center; /* Center the links */
+  }
+  
+  .main-nav a {
+    color: white; /* White text for links */
+    margin: 0 1rem; /* Space between links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s ease; /* Smooth color change on hover */
+  }
+  
+  .main-nav a:hover {
+    color: #61dafbaa; /* React blue-ish color on hover */
+  }

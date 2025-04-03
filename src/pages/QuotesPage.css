@@ -1,0 +1,83 @@
+/* Styling for the quotes page */
+.quotes-page-container {
+    max-width: 750px; /* Max width for quotes content */
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    text-align: center; /* Center heading and button */
+  }
+  
+  .quotes-page-container h2 {
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+  }
+  
+  .refresh-button {
+    margin-bottom: 2rem;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    /* Add other button styles if needed or rely on global ones */
+  }
+  
+  /* Disable button styles */
+  .refresh-button:disabled {
+      background-color: #555;
+      border-color: #666;
+      color: #999;
+      cursor: not-allowed;
+  }
+  
+  .quotes-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align quote text left */
+  }
+  
+  .quote-item {
+    background-color: #333; /* Darker background for each quote */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid #64cfff; /* Accent border */
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .quote-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .quote-text {
+    font-style: italic;
+    font-size: 1.15em; /* Slightly larger font for quote */
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0.8rem; /* Space between quote and source */
+    color: #e8e8e8; /* Brighter text for the quote itself */
+  }
+  
+  .quote-source {
+    font-style: normal;
+    font-size: 0.95em;
+    color: #a0a0a0; /* Dimmer color for the source */
+    text-align: right; /* Align source to the right */
+    margin: 0;
+  }
+  
+  /* Styles for loading/error messages (can reuse or define here) */
+  .status-message {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2rem;
+    color: #aaa;
+  }
+  
+  .error-message {
+    color: #ff6b6b; /* Red color for errors */
+    font-weight: bold;
+  }
+  
+  .error-message .refresh-button {
+      margin-top: 1rem; /* Add space above button in error message */
+  }
