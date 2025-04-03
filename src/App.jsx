@@ -1,11 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navigation from './components/navigation'; // <-- (Capital 'N')
+import Navigation from './components/navigation';
 import BooksPage from './pages/BooksPage';
 import BookDetailsPage from './pages/BookDetailsPage';
 import QuotesPage from './pages/QuotesPage';
-import './components/navigation.css'; // <-- M 'Navigation.css' (Capital 'N')
-// import './App.css'; // 
+import './components/navigation.css'; 
 function App() {
   return (
     <div className="App">
